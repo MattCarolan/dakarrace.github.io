@@ -1,0 +1,7 @@
+@media(min-width:801px){.hero-shade{background:linear-gradient(90deg,#111411 0%,#111411 42%,#111411e6 46%,#11141140 55%,transparent 63%),linear-gradient(0deg,#111211 0%,transparent 23%,transparent 95%)}}
+.portrait{position:relative;overflow:hidden;background-image:none}
+.portrait:before{content:'';position:absolute;height:340%;aspect-ratio:1.5;left:50%;top:-32%;background-image:url('assets/cinematic-concept.png');background-size:100% 100%;transform:translateX(-60%)}
+.portrait.warren:before{transform:translateX(-82%)}
+.orange-outline{background:transparent}
+@media(max-width:800px){.hero-art{height:365px;background-size:auto 180%;background-position:85% 18%}.hero-shade{background:linear-gradient(0deg,#111411 0%,#111411 49%,#111411d9 56%,#11141133 66%,transparent 77%)}}
+@media(max-width:520px){.hero-art{height:340px;background-size:auto 180%;background-position:85% 18%}}
