@@ -21,4 +21,4 @@
 }
 
 /* Exclude lettering baked into the original concept, above the jacket names. */
-.hero-art{clip-path:polygon(12% 0,100% 0,100% 100%,0 100%,0 58%,12% 58%)}
+.hero-art{mask-image:linear-gradient(90deg,transparent 0%,transparent 11%,#000 14%),linear-gradient(#000,#000);mask-size:100% 58%,100% 42%;mask-position:top,bottom;mask-repeat:no-repeat}
