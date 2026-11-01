@@ -19,3 +19,6 @@
 .hero h1{font-size:clamp(54px,10vw,80px)}
 .hero-foot{display:none}
 }
+
+/* Exclude lettering baked into the original concept, above the jacket names. */
+.hero-art{clip-path:polygon(12% 0,100% 0,100% 100%,0 100%,0 58%,12% 58%)}
