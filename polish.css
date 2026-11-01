@@ -1,7 +1,21 @@
-@media(min-width:801px){.hero-shade{background:linear-gradient(90deg,#111411 0%,#111411 42%,#111411e6 46%,#11141140 55%,transparent 63%),linear-gradient(0deg,#111211 0%,transparent 23%,transparent 95%)}}
 .portrait{position:relative;overflow:hidden;background-image:none}
 .portrait:before{content:'';position:absolute;height:340%;aspect-ratio:1.5;left:50%;top:-32%;background-image:url('assets/cinematic-concept.png');background-size:100% 100%;transform:translateX(-60%)}
 .portrait.warren:before{transform:translateX(-82%)}
 .orange-outline{background:transparent}
-@media(max-width:800px){.hero-art{height:365px;background-size:auto 180%;background-position:85% 18%}.hero-shade{background:linear-gradient(0deg,#111411 0%,#111411 49%,#111411d9 56%,#11141133 66%,transparent 77%)}}
-@media(max-width:520px){.hero-art{height:340px;background-size:auto 180%;background-position:85% 18%}}
+/* Keep the copy beside the portraits; never shade either face or jacket name. */
+.hero-art{inset:auto 0 auto auto;top:50%;width:58%;height:auto;aspect-ratio:19/14;transform:translateY(-50%);background-size:175.44% 158.73%;background-position:100% 21.62%}
+.hero-shade{background:linear-gradient(90deg,#111411 0%,#111411 41%,transparent 47%),linear-gradient(0deg,#111211 0%,transparent 12%,transparent 92%,#111211 100%)}
+.hero h1{font-size:clamp(56px,6vw,96px)}
+.hero-content>.eyebrow,.hero-tagline,.hero-intro{max-width:40%}
+.hero .actions{max-width:42%}
+.hero-caption{display:none}
+@media(max-width:1100px) and (min-width:801px){.hero-content{padding-top:60px}.hero-tagline{font-size:19px}.hero .actions{flex-direction:column;align-items:flex-start}}
+@media(max-width:800px){
+.hero{height:auto;min-height:0;padding-bottom:36px}
+.hero-art{top:0;left:0;right:0;width:100%;height:auto;aspect-ratio:19/14;transform:none}
+.hero-shade{background:linear-gradient(0deg,#111411 0%,#111411 15%,transparent 24%);top:0;bottom:auto;height:73.684vw;pointer-events:none}
+.hero-content{padding-top:calc(73.684vw + 18px)}
+.hero-content>.eyebrow,.hero-tagline,.hero-intro,.hero .actions{max-width:none}
+.hero h1{font-size:clamp(54px,10vw,80px)}
+.hero-foot{display:none}
+}
